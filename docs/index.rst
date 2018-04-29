@@ -26,6 +26,8 @@ Natural Language Processing (NLP) with PyTorch
    :caption: Day 2 Materials
 
 
+For participants of the Training Tutorial in NY, please fill out this form!
+https://goo.gl/forms/iLRlpoutWBy3As8Q2
 
 Hello! This is a directory of resources for a training tutorial to be
 given at the O'Reilly AI Conference in New York City on Sunday, April 29, and Monday, April 30, 2018.
