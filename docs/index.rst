@@ -14,28 +14,23 @@ Natural Language Processing (NLP) with PyTorch
    download_data
    environment_setup
    faq
-   Recipes <recipes/index>
 
 .. toctree::
    :hidden:
    :caption: Day 1 Materials
 
-   Take Home Exercises <day1/takehome>
 
 .. toctree::
    :hidden:
    :maxdepth: 3
    :caption: Day 2 Materials
 
-   Warm-Up Exercise <day2/warmup>
-   Choose Your Own Adventure <day2/adventures/index>
-   Neural Network Patterns <day2/patterns/index>
 
 
 Hello! This is a directory of resources for a training tutorial to be
-given at the O'Reilly AI Conference in San Francisco on September 17 and 18, 2017.
+given at the O'Reilly AI Conference in New York City on Sunday, April 29, and Monday, April 30, 2018.
 
-Please read below for general information.  You can find the github repository at `this link <https://github.com/joosthub/pytorch-nlp-tutorial-sf2017>`_.  Please note that there are two ways to engage in this training (desribed below).
+Please read below for general information.  You can find the github repository at `this link <https://github.com/joosthub/pytorch-nlp-tutorial-ny2018>`_.  Please note that there are two ways to engage in this training (desribed below).
 
 More information will be added to this site as the training progresses.
 Specifically, we will be adding a 'recipes' section, 'errata' section, and a 'bonus exercise' section as the training progresses!
@@ -55,4 +50,4 @@ Hardware and/or installation requirements:
 
 - There are two options:
    1. **Using O'Reilly's online resources**.  For this, you only needs a laptop; on the first day, we will provide you with credentials and a URL to use an online computing resource (a JupyterHub instance) provided by O'Reilly.  You will be able to access Jupyter notebooks through this and they will persist until the end of the second day of training (September 18th).  This option is not limited by what operating system you have. You will need to have a browser installed.
-   2. **Setting everything up locally**.  For this, you need a laptop with the PyTorch environment set up.  This is only recommended if you want to have the environment locally or have a laptop with a GPU. (If you have trouble following the provided instructions or if you find any mistakes, please file an issue `here <https://github.com/joosthub/pytorch-nlp-tutorial-sf2017>`_.)  This option is limited to Macs and Linux users only (sorry Windows users!).  Be sure you check the `LOCAL_RUN_README.md <https://github.com/joosthub/pytorch-nlp-tutorial-sf2017/blob/master/LOCAL_RUN_README.md>`_.
+   2. **Setting everything up locally**.  For this, you need a laptop with the PyTorch environment set up.  This is only recommended if you want to have the environment locally or have a laptop with a GPU. (If you have trouble following the provided instructions or if you find any mistakes, please file an issue `here <https://github.com/joosthub/pytorch-nlp-tutorial-ny2018>`_.)  This option is limited to Macs and Linux users only (sorry Windows users!).  Be sure you check the `LOCAL_RUN_README.md <https://github.com/joosthub/pytorch-nlp-tutorial-ny2018/blob/master/LOCAL_RUN_README.md>`_.
