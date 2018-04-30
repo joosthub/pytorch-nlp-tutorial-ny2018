@@ -16,7 +16,7 @@ To start, we create the initial vectors:
 
 Then, we need to use these vectors to retrieve the next prediction:
 
-.. code-block::python
+.. code-block:: python
 
    # model is stored in variable called `net`
 
