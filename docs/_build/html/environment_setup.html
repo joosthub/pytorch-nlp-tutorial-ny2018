@@ -25,26 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="NLP with PyTorch  documentation" href="index.html"/>
-        <link rel="next" title="Frequency Asked Questions" href="faq.html"/>
-        <link rel="prev" title="Getting the Data" href="download_data.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Frequency Asked Questions" href="faq.html" />
+    <link rel="prev" title="Getting the Data" href="download_data.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -86,7 +79,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Resources</span></p>
+              <p class="caption"><span class="caption-text">Extra Resources</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="download_data.html">Getting the Data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Environment Setup</a><ul>
@@ -104,7 +97,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequency Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="day1/index.html">Day 1</a></li>
 </ul>
 
             
@@ -116,7 +108,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">NLP with PyTorch</a>
@@ -124,9 +116,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -196,7 +189,7 @@ with the <code class="code docutils literal"><span class="pre">conda</span></cod
 you can install specific versions of packages without worrying that it breaks
 a dependency elsewhere.</p>
 <p>Here is how you can create an environment with Anaconda</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>conda create -n dl4nlp <span class="nv">python</span><span class="o">=</span>3.6
+<div class="highlight-bash"><div class="highlight"><pre><span></span>conda create -n dl4nlp <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
 </pre></div>
 </div>
 </div>
@@ -212,12 +205,12 @@ a dependency elsewhere.</p>
 console prompt to let you know it is active.</p>
 <p>With the environment activated, any installation commands
 (whether it is <code class="code docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">X</span></code>, <code class="code docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code> or using
-Anaconda&#8217;s install command <code class="code docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">X</span></code>) will only install inside
+Anaconda’s install command <code class="code docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">X</span></code>) will only install inside
 the environment.</p>
 </div>
 <div class="section" id="b-install-ipython-and-jupyter">
 <h3>2b. Install IPython and Jupyter<a class="headerlink" href="#b-install-ipython-and-jupyter" title="Permalink to this headline">¶</a></h3>
-<p>Two core dependencies are IPython and Jupyter.  Let&#8217;s install them first:</p>
+<p>Two core dependencies are IPython and Jupyter.  Let’s install them first:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>conda install ipython
 conda install jupyter
 </pre></div>
@@ -231,7 +224,7 @@ needs to be linked:</p>
 <div class="section" id="c-installing-cuda-optional">
 <h3>2c. Installing CUDA (optional)<a class="headerlink" href="#c-installing-cuda-optional" title="Permalink to this headline">¶</a></h3>
 <p>NOTE: CUDA is currently not supported out of the conda package control manager.
-Please refer to pytorch&#8217;s github repository for compilation instructions.</p>
+Please refer to pytorch’s github repository for compilation instructions.</p>
 <p>If you have a CUDA compatible GPU, it is worthwhile to take advantage of it as
 it can significantly speedup training and make your PyTorch experimentation more
 enjoyable.</p>
@@ -250,18 +243,26 @@ If you have been following along so far and have Anaconda installed with CUDA en
 <div class="highlight-bash"><div class="highlight"><pre><span></span>conda install pytorch torchvision cuda80 -c soumith
 </pre></div>
 </div>
-<p>The widget on PyTorch.org will let you select the right command line for your specific OS/Arch.
-Make sure you have PyTorch 2.0 or higher.</p>
+<p>The widget on PyTorch.org will let you select the right command line for your specific OS/Arch.</p>
+<p>PLEASE NOTE.   Make sure you have PyTorch 0.3.0.  PyTorch has recently released version 0.4.0, but it has many code changes that we will not be incorporating at this time.   The Anaconda installation method for this is:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>conda install <span class="nv">pytorch</span><span class="o">=</span><span class="m">0</span>.3.1 torchvision -c pytorch
+</pre></div>
+</div>
+<p>If you would like to install using pips and wheels:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp36-cp36m-linux_x86_64.whl
+pip install torchvision
+</pre></div>
+</div>
 </div>
 <div class="section" id="e-clone-or-download-repository">
 <h3>2e. Clone (or Download) Repository<a class="headerlink" href="#e-clone-or-download-repository" title="Permalink to this headline">¶</a></h3>
 <p>At this point, you may have already cloned the tutorial repository.  But if
 you have not, you will need it for the next step.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>git clone https://github.com/joosthub/pytorch-nlp-tutorial-sf2017.git
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git clone https://github.com/joosthub/pytorch-nlp-tutorial-ny2018.git
 </pre></div>
 </div>
 <p>If you do not have git or do not want to use it, you can also
-<a class="reference external" href="https://github.com/joosthub/pytorch-nlp-tutorial-sf2017/archive/master.zip">download the repository as a zip file</a></p>
+<a class="reference external" href="https://github.com/joosthub/pytorch-nlp-tutorial-ny2018/archive/master.zip">download the repository as a zip file</a></p>
 </div>
 <div class="section" id="f-install-dependencies-from-repository">
 <h3>2f. Install Dependencies from Repository<a class="headerlink" href="#f-install-dependencies-from-repository" title="Permalink to this headline">¶</a></h3>
@@ -276,9 +277,7 @@ please navigate to the directory in your terminal.  Then, you can do the followi
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -300,7 +299,7 @@ please navigate to the directory in your terminal.  Then, you can do the followi
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -319,6 +318,7 @@ please navigate to the directory in your terminal.  Then, you can do the followi
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -328,7 +328,7 @@ please navigate to the directory in your terminal.  Then, you can do the followi
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -337,14 +337,13 @@ please navigate to the directory in your terminal.  Then, you can do the followi
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

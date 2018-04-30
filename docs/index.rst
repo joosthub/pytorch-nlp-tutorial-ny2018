@@ -30,6 +30,10 @@ Natural Language Processing (NLP) with PyTorch
    day2/warmup
    day2/failfastprototypemode
    day2/tensorfu1
+   day2/sampling.rst
+   day2/tensorfu2.rst
+   day2/adventures/interpolation.rst
+   
 
 
 

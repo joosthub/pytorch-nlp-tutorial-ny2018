@@ -109,7 +109,21 @@ If you have been following along so far and have Anaconda installed with CUDA en
    conda install pytorch torchvision cuda80 -c soumith
 
 The widget on PyTorch.org will let you select the right command line for your specific OS/Arch.
-Make sure you have PyTorch 2.0 or higher.
+
+PLEASE NOTE.   Make sure you have PyTorch 0.3.0.  PyTorch has recently released version 0.4.0, but it has many code changes that we will not be incorporating at this time.   The Anaconda installation method for this is:
+
+.. code-block:: bash
+
+   conda install pytorch=0.3.1 torchvision -c pytorch
+
+If you would like to install using pips and wheels:
+
+.. code-block:: bash
+
+   pip install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp36-cp36m-linux_x86_64.whl
+   pip install torchvision
+
+
 
 2e. Clone (or Download) Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,10 +133,10 @@ you have not, you will need it for the next step.
 
 .. code-block:: bash
 
-   git clone https://github.com/joosthub/pytorch-nlp-tutorial-sf2017.git
+   git clone https://github.com/joosthub/pytorch-nlp-tutorial-ny2018.git
 
 If you do not have git or do not want to use it, you can also
-`download the repository as a zip file <https://github.com/joosthub/pytorch-nlp-tutorial-sf2017/archive/master.zip>`_
+`download the repository as a zip file <https://github.com/joosthub/pytorch-nlp-tutorial-ny2018/archive/master.zip>`_
 
 2f. Install Dependencies from Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
