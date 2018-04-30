@@ -19,11 +19,17 @@ Natural Language Processing (NLP) with PyTorch
    :hidden:
    :caption: Day 1 Materials
 
+   day1/solutions
 
 .. toctree::
    :hidden:
    :maxdepth: 3
    :caption: Day 2 Materials
+
+   day2/warmup
+   day2/failfastprototypemode
+   day2/tensorfu1
+
 
 
 For participants of the Training Tutorial in NY, please fill out this form!
