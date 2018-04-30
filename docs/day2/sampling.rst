@@ -33,7 +33,7 @@ Now that we have a prediction vector, we can create a probability distribution a
 	
    temperature = 1.0
    prediction_vector = F.softmax(y_t / temperature, dim=1)
-   x_index_t = torch.multinomial(y_t, dim=1)[:, 0]
+   x_index_t = torch.multinomial(y_t, 1)[:, 0]
 
 
 Now we can start the cycle over again:
