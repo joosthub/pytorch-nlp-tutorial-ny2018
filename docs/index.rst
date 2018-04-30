@@ -14,6 +14,7 @@ Natural Language Processing (NLP) with PyTorch
    download_data
    environment_setup
    faq
+   migration
 
 .. toctree::
    :hidden:
