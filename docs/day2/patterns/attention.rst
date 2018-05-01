@@ -1,5 +1,5 @@
-Attention
-=========
+Design Pattern: Attention
+=========================
 
 Attention is a useful pattern for when you want to take a collection of vectors---whether it be a sequence of vectors representing a sequence of words, or an unordered collections of vectors representing a collection of attributes---and summarize them into a single vector.  This has similar analogs to the CBOW examples we saw on Day 1, but instead of just averaging or using max pooling, we are learning a function which learns to compute the weights for each of the vectors before summing them together.
 

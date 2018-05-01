@@ -1,5 +1,5 @@
-Sampling from an RNN
-====================
+Exercise: Sampling from an RNN
+==============================
 
 The goal of sampling from an RNN is to initialize the sequence in some way, feed it into the recurrent computation, and retrieve the next prediction. 
 
